@@ -16,15 +16,6 @@ Intelligent demand & sales forecasting system with cleaning pipelines, feature e
 - **Explainability**: SHAP values, feature importance, and model diagnostics
 - **Business Intelligence**: Inventory optimization (ROP, Safety Stock)
 
-### Production Ready
-
-- **FastAPI**: High-performance inference API with automatic documentation
-- **Streamlit Dashboard**: Interactive business user interface
-- **Docker**: Containerized deployment with docker-compose
-- **MLflow**: Model registry, experiment tracking, and deployment
-- **Prefect**: Workflow orchestration and scheduling
-- **CI/CD**: GitHub Actions with comprehensive testing
-
 ## Architecture
 
 ```mermaid
@@ -80,25 +71,8 @@ graph TB
     Z[Prefect Flows] --> I
     Z --> S
 
-    style A fill:#e1f5fe
-    style P fill:#f3e5f5
-    style Q fill:#e8f5e8
-    style T fill:#fff3e0
-    style W fill:#fce4ec
+    
 ```
-
-### System Components
-
-| Component          | Technology                      | Purpose                             |
-| ------------------ | ------------------------------- | ----------------------------------- |
-| **Data Pipeline**  | Pandas, Polars                  | Data loading, cleaning, validation  |
-| **Feature Store**  | Custom modules                  | Calendar, lag, price/promo features |
-| **Model Training** | Scikit-learn, LightGBM, XGBoost | Multiple model families with CV     |
-| **Model Registry** | MLflow                          | Versioning, staging, deployment     |
-| **API**            | FastAPI                         | High-performance inference          |
-| **Dashboard**      | Streamlit                       | Business user interface             |
-| **Orchestration**  | Prefect                         | Workflow management                 |
-| **Monitoring**     | MLflow, Structlog               | Experiment tracking, logging        |
 
 ## Quick Start
 
